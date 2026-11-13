@@ -1,0 +1,59 @@
+{
+  "evalId": "eval-fixture-v1",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-10-27T07:30:00.000Z",
+    "results": [
+      {
+        "promptIdx": 0,
+        "testIdx": 0,
+        "testCase": {"description": "premium-espresso-machine", "vars": {"product_name": "Barista Pro 900", "min_words": 40}},
+        "vars": {"product_name": "Barista Pro 900", "min_words": 40},
+        "response": {"output": "The Barista Pro 900 brings café-grade shots to your kitchen. Its 15-bar Italian pump and PID temperature control pull consistent espresso every morning, while the steam wand textures milk for silky lattes. A built-in burr grinder delivers fresh grounds in seconds, so home baristas never settle for stale coffee again."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 1,
+        "testCase": {"description": "premium-standing-desk", "vars": {"product_name": "Ascend Standing Desk", "min_words": 40}},
+        "vars": {"product_name": "Ascend Standing Desk", "min_words": 40},
+        "response": {"output": "The Ascend Standing Desk moves from sitting to standing height in under ten seconds. Dual motors lift heavy setups without wobble, four memory presets remember your favourite heights, and the anti-collision sensor stops the frame instantly if anything gets in the way. A warm bamboo top finishes a desk built for long workdays at home."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 2,
+        "testCase": {"description": "standard-yoga-mat", "vars": {"product_name": "Grounded Yoga Mat", "min_words": 15}},
+        "vars": {"product_name": "Grounded Yoga Mat", "min_words": 15},
+        "response": {"output": "This non-slip mat gives you a stable grip through every flow, with 6 mm cushioning that protects your knees and a strap for easy carrying."},
+        "success": false,
+        "score": 0.75,
+        "gradingResult": {"pass": false, "score": 0.75, "reason": "Expected output to contain \"Grounded Yoga Mat\"", "componentResults": [{"pass": false, "score": 0, "reason": "Expected output to contain \"Grounded Yoga Mat\""}]}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 3,
+        "testCase": {"description": "standard-desk-lamp", "vars": {"product_name": "Lumen Arc Lamp", "min_words": 15}},
+        "vars": {"product_name": "Lumen Arc Lamp", "min_words": 15},
+        "response": {"output": "The Lumen Arc Lamp gives remote workers warm, adjustable light for late sessions, and its USB-C port charges your phone while you read the last email of the day."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 4,
+        "testCase": {"description": "standard-water-bottle", "vars": {"product_name": "Trailhead Bottle", "min_words": 15}},
+        "vars": {"product_name": "Trailhead Bottle", "min_words": 15},
+        "response": {"output": "Stay hydrated on every trail with the Trailhead Bottle. Double-wall insulation keeps drinks cold for 24 hours, and the leakproof lid survives any backpack."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+# Each description is the join key compare.py uses to pair v1 and v2 rows — keep them unique and stable.
+- description: standard-wireless-earbuds
+  vars:
+    product_name: Echo Buds Air
+    audience: daily commuters
+    features: active noise cancelling | 30-hour battery | sweat resistant
+    keywords: noise|battery|sweat        # substrings the coverage assertion looks for
+    min_words: 15
+- description: standard-yoga-mat
+  vars:
+    product_name: Grounded Yoga Mat
+    audience: beginner yogis
+    features: non-slip surface | 6 mm cushioning | carry strap
+    keywords: slip|cushion|strap
+    min_words: 15
+- description: standard-water-bottle
+  vars:
+    product_name: Trailhead Bottle
+    audience: hikers
+    features: double-wall insulation | leakproof lid | cold for 24 hours
+    keywords: insulat|leak|cold
+    min_words: 15
+- description: standard-desk-lamp
+  vars:
+    product_name: Lumen Arc Lamp
+    audience: remote workers
+    features: glare-free LEDs | five brightness levels | USB-C charging port
+    keywords: glare|bright|usb
+    min_words: 15
+- description: standard-backpack
+  vars:
+    product_name: Transit 22L Backpack
+    audience: university students
+    features: padded laptop sleeve | water-resistant fabric | hidden passport pocket
+    keywords: laptop|water|pocket
+    min_words: 15
+- description: standard-phone-stand
+  vars:
+    product_name: PivotGrip Stand
+    audience: people on video calls
+    features: 360-degree rotation | aluminium build | folds flat
+    keywords: rotat|alumin|fold
+    min_words: 15
+- description: premium-espresso-machine
+  vars:
+    product_name: Barista Pro 900
+    audience: home baristas
+    features: 15-bar Italian pump | PID temperature control | built-in burr grinder | steam wand
+    keywords: pump|temperature|grinder|steam
+    min_words: 40                        # premium listings need room to justify the price
+- description: premium-standing-desk
+  vars:
+    product_name: Ascend Standing Desk
+    audience: people who work from home
+    features: dual motors | four memory presets | anti-collision sensor | bamboo top
+    keywords: motor|preset|collision|bamboo
+    min_words: 40

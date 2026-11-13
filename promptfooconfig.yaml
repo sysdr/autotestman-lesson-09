@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: "L9 product-description prompt regression"
+prompts:
+  - id: file://prompts/v1.txt
+    label: v1                     # column header in the web UI
+  - id: file://prompts/v2.txt
+    label: v2
+providers:
+  - id: ollama:chat:llama3.2:3b   # local model, no API key
+    config:
+      temperature: 0              # remove sampling noise so diffs reflect the prompt
+      seed: 42                    # pin the sampler for repeatable runs
+defaultTest:
+  assert:
+    - type: icontains
+      value: "{{product_name}}"
+      metric: names_product
+    - type: javascript
+      metric: min_words
+      value: |
+        const n = output.trim().split(/\s+/).length;
+        const min = Number(context.vars.min_words);
+        return { pass: n >= min, score: n >= min ? 1 : 0, reason: `word count ${n} vs min ${min}` };
+    - type: javascript
+      metric: max_words
+      value: |
+        const n = output.trim().split(/\s+/).length;
+        return { pass: n <= 120, score: n <= 120 ? 1 : 0, reason: `word count ${n} vs max 120` };
+    - type: javascript
+      metric: covers_features
+      value: |
+        const keys = String(context.vars.keywords).split('|');
+        const hits = keys.filter((k) => output.toLowerCase().includes(k.trim().toLowerCase()));
+        return { pass: hits.length >= 1, score: hits.length / keys.length, reason: `mentions ${hits.length}/${keys.length} feature keywords` };
+tests: file://tests/cases.yaml

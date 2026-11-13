@@ -1,0 +1,8 @@
+You are a copywriter for an online store. Readers skim, so be punchy.
+Write a product description for "{{product_name}}" aimed at {{audience}}.
+Key features: {{features}}.
+Requirements:
+- Mention the exact product name "{{product_name}}" at least once.
+- Cover at least two of the key features.
+- Keep it under 30 words. Cut every word that does not sell.
+- Return only the description text, with no title, quotes, or preamble.

@@ -1,0 +1,59 @@
+{
+  "evalId": "eval-fixture-v2",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-10-27T07:35:00.000Z",
+    "results": [
+      {
+        "promptIdx": 0,
+        "testIdx": 0,
+        "testCase": {"description": "premium-espresso-machine", "vars": {"product_name": "Barista Pro 900", "min_words": 40}},
+        "vars": {"product_name": "Barista Pro 900", "min_words": 40},
+        "response": {"output": "Barista Pro 900: 15-bar pump, PID temperature control, built-in grinder. Café shots at home, every morning."},
+        "success": false,
+        "score": 0.75,
+        "gradingResult": {"pass": false, "score": 0.75, "reason": "word count 16 vs min 40", "componentResults": [{"pass": true, "score": 1, "reason": "Assertion passed"}, {"pass": false, "score": 0, "reason": "word count 16 vs min 40"}]}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 1,
+        "testCase": {"description": "premium-standing-desk", "vars": {"product_name": "Ascend Standing Desk", "min_words": 40}},
+        "vars": {"product_name": "Ascend Standing Desk", "min_words": 40},
+        "response": {"output": "Ascend Standing Desk. Dual motors, four memory presets, anti-collision safety. Sit or stand in seconds."},
+        "success": false,
+        "score": 0.75,
+        "gradingResult": {"pass": false, "score": 0.75, "reason": "word count 15 vs min 40", "componentResults": [{"pass": true, "score": 1, "reason": "Assertion passed"}, {"pass": false, "score": 0, "reason": "word count 15 vs min 40"}]}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 2,
+        "testCase": {"description": "standard-yoga-mat", "vars": {"product_name": "Grounded Yoga Mat", "min_words": 15}},
+        "vars": {"product_name": "Grounded Yoga Mat", "min_words": 15},
+        "response": {"output": "Grounded Yoga Mat: non-slip grip, 6 mm cushioning that saves your knees, and a carry strap. Flow anywhere."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 3,
+        "testCase": {"description": "standard-desk-lamp", "vars": {"product_name": "Lumen Arc Lamp", "min_words": 15}},
+        "vars": {"product_name": "Lumen Arc Lamp", "min_words": 15},
+        "response": {"output": "Glare-free LEDs. Five brightness levels. One USB-C port. Meet the Lumen Arc Lamp, built for focus."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      },
+      {
+        "promptIdx": 0,
+        "testIdx": 4,
+        "testCase": {"description": "standard-water-bottle", "vars": {"product_name": "Trailhead Bottle", "min_words": 15}},
+        "vars": {"product_name": "Trailhead Bottle", "min_words": 15},
+        "response": {"output": "Stay hydrated on every trail with the Trailhead Bottle. Double-wall insulation keeps drinks cold for 24 hours, and the leakproof lid survives every backpack."},
+        "success": true,
+        "score": 1,
+        "gradingResult": {"pass": true, "score": 1, "reason": "All assertions passed", "componentResults": []}
+      }
+    ]
+  }
+}

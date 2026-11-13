@@ -1,0 +1,49 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  <rect width="700" height="420" fill="#ffffff"/>
+
+  <g transform="translate(30,80)">
+    <rect width="170" height="70" rx="10" ry="10" fill="#e8f4fd" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">prompts v1 · v2</text>
+    <text x="85" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b" text-anchor="middle" dominant-baseline="middle">+ tests/cases.yaml</text>
+  </g>
+
+  <g transform="translate(265,80)">
+    <rect width="170" height="70" rx="10" ry="10" fill="#f4e8fd" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">promptfoo eval</text>
+    <text x="85" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b" text-anchor="middle" dominant-baseline="middle">one run per version</text>
+  </g>
+
+  <g transform="translate(500,80)">
+    <rect width="170" height="70" rx="10" ry="10" fill="#fdf4e8" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">Ollama llama3.2:3b</text>
+  </g>
+
+  <g transform="translate(30,270)">
+    <rect width="170" height="70" rx="10" ry="10" fill="#e8f4fd" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">results/v1+v2.json</text>
+  </g>
+
+  <g transform="translate(265,270)">
+    <rect width="170" height="70" rx="10" ry="10" fill="#e8fdf4" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">compare.py</text>
+  </g>
+
+  <g transform="translate(500,270)">
+    <rect width="170" height="70" rx="10" ry="10" fill="#fdf4e8" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="85" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">regression table</text>
+  </g>
+
+  <line x1="200" y1="115" x2="262" y2="115" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="435" y1="115" x2="497" y2="115" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="150" x2="132" y2="267" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="200" y1="305" x2="262" y2="305" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="435" y1="305" x2="497" y2="305" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="700" height="420" fill="#ffffff"/>
+
+  <rect x="30" y="30" width="305" height="360" rx="10" ry="10" fill="#fdf4e8" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="182.5" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">Before: eyeball it</text>
+
+  <g transform="translate(55,90)">
+    <rect width="255" height="60" rx="10" ry="10" fill="#e8f4fd" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="127.5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">Edit prompt, try 3 inputs by hand</text>
+  </g>
+  <g transform="translate(55,190)">
+    <rect width="255" height="60" rx="10" ry="10" fill="#e8f4fd" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="127.5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">6/8 pass, same as yesterday: ship</text>
+  </g>
+  <g transform="translate(55,290)">
+    <rect width="255" height="60" rx="10" ry="10" fill="#f4e8fd" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="127.5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">2 premium listings silently broken</text>
+  </g>
+  <line x1="182.5" y1="150" x2="182.5" y2="187" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="182.5" y1="250" x2="182.5" y2="287" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="365" y="30" width="305" height="360" rx="10" ry="10" fill="#e8fdf4" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="517.5" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">After: diff the evals</text>
+
+  <g transform="translate(390,90)">
+    <rect width="255" height="60" rx="10" ry="10" fill="#e8f4fd" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="127.5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">Eval v1 and v2 on the same 8 cases</text>
+  </g>
+  <g transform="translate(390,190)">
+    <rect width="255" height="60" rx="10" ry="10" fill="#f4e8fd" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="127.5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">Join rows by test description</text>
+  </g>
+  <g transform="translate(390,290)">
+    <rect width="255" height="60" rx="10" ry="10" fill="#e8f4fd" stroke="#10b981" stroke-width="2.5" filter="url(#shadow)"/>
+    <text x="127.5" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="middle" dominant-baseline="middle">2 regressions named, merge blocked</text>
+  </g>
+  <line x1="517.5" y1="150" x2="517.5" y2="187" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="517.5" y1="250" x2="517.5" y2="287" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>
